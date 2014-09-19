@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.derek.ddoodleboard.MainActivity" >
+
+    <item
+        android:id="@+id/menu_item_clear"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_menu_item_clear"/>
+    <item
+        android:id="@+id/menu_item_save"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_menu_item_save"/>
+
+</menu>

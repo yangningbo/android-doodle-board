@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多彩涂鸦板</string>
+    <string name="title_menu_item_clear">清空屏幕</string>
+    <string name="title_menu_item_save">保存到相册</string>
+    
+</resources>

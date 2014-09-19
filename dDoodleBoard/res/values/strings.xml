@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doodle Board</string>
+    <string name="title_menu_item_clear">Clear Doodle Board</string>
+    <string name="title_menu_item_save">Save Into Album</string>
+    
+</resources>
