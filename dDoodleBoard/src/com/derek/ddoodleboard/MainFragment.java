@@ -2,7 +2,9 @@ package com.derek.ddoodleboard;
 
 import android.app.Fragment;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
@@ -11,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.derek.ddoodleboard.view.PaintView;
 
@@ -47,7 +50,16 @@ public class MainFragment extends Fragment {
 			Bitmap bitmap = mPaintView.getBitmap();
 
 			ContentResolver cr = getActivity().getContentResolver();
-			MediaStore.Images.Media.insertImage(cr, bitmap, "myPhoto", "this is a Photo");
+			String imagePath = MediaStore.Images.Media.insertImage(cr, bitmap, "myPhoto", "this is a Photo");
+
+			if (imagePath != null) {
+				Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse(imagePath));
+				getActivity().sendBroadcast(intent);
+
+				Toast.makeText(getActivity(), R.string.tip_save_album_success, Toast.LENGTH_SHORT).show();
+			} else {
+				Toast.makeText(getActivity(), R.string.tip_save_albim_failed, Toast.LENGTH_SHORT).show();
+			}
 
 			return true;
 		}

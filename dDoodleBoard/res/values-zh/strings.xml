@@ -4,5 +4,7 @@
     <string name="app_name">多彩涂鸦板</string>
     <string name="title_menu_item_clear">清空屏幕</string>
     <string name="title_menu_item_save">保存到相册</string>
-    
+    <string name="tip_save_album_success">保存你的涂鸦作品成功</string>
+    <string name="tip_save_albim_failed">保存你得涂鸦作品失败</string>
+
 </resources>

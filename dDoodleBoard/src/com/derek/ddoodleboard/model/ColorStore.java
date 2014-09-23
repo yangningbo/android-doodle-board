@@ -14,4 +14,5 @@ public class ColorStore {
 
 		return Color.rgb(red, green, blue);
 	}
+
 }

@@ -4,5 +4,7 @@
     <string name="app_name">Doodle Board</string>
     <string name="title_menu_item_clear">Clear Doodle Board</string>
     <string name="title_menu_item_save">Save Into Album</string>
-    
+    <string name="tip_save_album_success">Success to save your doodle work into album</string>
+    <string name="tip_save_albim_failed">Fail to save your doodle work into album</string>
+
 </resources>
